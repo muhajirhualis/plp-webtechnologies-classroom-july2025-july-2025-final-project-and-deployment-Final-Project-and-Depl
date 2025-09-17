@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | WanderLuxe Travel Co.</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/about.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">WanderLuxe</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="itineraries.html">Itineraries</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>About WanderLuxe</h1>
+        <p>Where passion for travel meets unparalleled service.</p>
+      </div>
+    </section>
+
+    <section class="about-story section-padding">
+      <div class="container about__split">
+        <div class="about__image">
+          <img src="../images/team/ceo.jpg" alt="Our Founder">
+        </div>
+        <div class="about__content">
+          <h2>Our Story</h2>
+          <p>Founded in 2015 by Isabella Moreau, WanderLuxe was born from a simple belief: luxury travel should be
+            effortless, deeply personal, and utterly unforgettable.</p>
+          <p>What began as a boutique agency for European escapes has blossomed into a global curator of
+            once-in-a-lifetime journeys — from private islands to hidden mountain retreats.</p>
+          <a href="contact.html" class="btn btn--primary">Plan Your Journey</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="team section-padding">
+      <div class="container">
+        <h2>Meet Our Experts</h2>
+        <div class="team-grid">
+          <article class="team-member">
+            <img src="../images/team/guide1.jpg" alt="Alex Rivera">
+            <h3>Alex Rivera</h3>
+            <p>Lead Travel Designer</p>
+            <button class="read-more">Read Bio</button>
+            <div class="bio hidden">
+              <p>Former diplomat with 15+ years crafting VIP itineraries across Asia and the Middle East.</p>
+            </div>
+          </article>
+          <article class="team-member">
+            <img src="../images/team/guide2.jpg" alt="Sophie Laurent">
+            <h3>Sophie Laurent</h3>
+            <p>Concierge & Experience Curator</p>
+            <button class="read-more">Read Bio</button>
+            <div class="bio hidden">
+              <p>Michelin-trained sommelier who designs culinary journeys from Tuscany to Tokyo.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="values section-padding">
+      <div class="container">
+        <h2>Our Core Values</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">🌿</div>
+            <h3>Sustainability</h3>
+            <p>We partner with eco-lodges and carbon-neutral transport.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">✨</div>
+            <h3>Luxury Redefined</h3>
+            <p>Personalized, not pretentious. Space, silence, and service.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3>Human Connection</h3>
+            <p>Every trip is designed by a real human who knows your name.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- Same as index.html -->
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <h4>WanderLuxe</h4>
+          <p>Redefining luxury, one journey at a time.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form class="footer-subscribe">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn--sm">Join</button>
+          </form>
+          <div class="social-icons">
+            <a href="#">📘</a>
+            <a href="#">📸</a>
+            <a href="#">🐦</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 WanderLuxe Travel Co. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // Simple read-more toggle (could be moved to separate about.js if scaled)
+    document.querySelectorAll('.read-more').forEach(button => {
+      button.addEventListener('click', () => {
+        const bio = button.nextElementSibling;
+        bio.classList.toggle('hidden');
+        button.textContent = bio.classList.contains('hidden') ? 'Read Bio' : 'Hide Bio';
+      });
+    });
+  </script>
+</body>
+
+</html>

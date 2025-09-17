@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itineraries | WanderLuxe Travel Co.</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/itineraries.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">WanderLuxe</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="itineraries.html">Itineraries</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Signature Itineraries</h1>
+        <p>Bespoke journeys designed for unforgettable moments.</p>
+      </div>
+    </section>
+
+    <section class="itineraries-list section-padding">
+      <div class="container">
+        <div class="itinerary" id="paris">
+          <div class="itinerary-header" tabindex="0">
+            <h2>Parisian Elegance</h2>
+            <span class="duration">7 Days • From $8,500</span>
+          </div>
+          <div class="itinerary-content hidden">
+            <div class="itinerary-gallery">
+              <img src="../images/destinations/paris.jpg" alt="Eiffel Tower">
+              <img src="../images/destinations/paris2.jpg" alt="Louvre">
+              <img src="../images/destinations/paris3.jpg" alt="Seine River">
+            </div>
+            <div class="itinerary-details">
+              <h3>Highlights</h3>
+              <ul>
+                <li>Private tour of Musée d’Orsay before opening</li>
+                <li>Seine River dinner cruise with Michelin chef</li>
+                <li>Stay at 5-star Le Meurice with Eiffel views</li>
+                <li>Perfume-making workshop in Montmartre</li>
+              </ul>
+              <button class="btn btn--primary request-btn" data-trip="Parisian Elegance">Request This Trip</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="itinerary" id="tokyo">
+          <div class="itinerary-header" tabindex="0">
+            <h2>Tokyo Nights & Temples</h2>
+            <span class="duration">10 Days • From $9,200</span>
+          </div>
+          <div class="itinerary-content hidden">
+            <div class="itinerary-gallery">
+              <img src="../images/destinations/tokyo.jpg" alt="Shibuya Crossing">
+              <img src="../images/destinations/tokyo2.jpg" alt="Senso-ji Temple">
+              <img src="../images/destinations/tokyo3.jpg" alt="Ryokan Stay">
+            </div>
+            <div class="itinerary-details">
+              <h3>Highlights</h3>
+              <ul>
+                <li>Private sushi masterclass with Tsukiji chef</li>
+                <li>Stay in a Kyoto ryokan with private onsen</li>
+                <li>Sumo wrestling breakfast experience</li>
+                <li>Guided night photography tour of Shinjuku</li>
+              </ul>
+              <button class="btn btn--primary request-btn" data-trip="Tokyo Nights & Temples">Request This Trip</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="itinerary" id="bali">
+          <div class="itinerary-header" tabindex="0">
+            <h2>Balinese Serenity</h2>
+            <span class="duration">8 Days • From $7,800</span>
+          </div>
+          <div class="itinerary-content hidden">
+            <div class="itinerary-gallery">
+              <img src="../images/destinations/bali.jpg" alt="Ubud Rice Terraces">
+              <img src="../images/destinations/bali2.jpg" alt="Private Villa">
+              <img src="../images/destinations/bali3.jpg" alt="Beach Club">
+            </div>
+            <div class="itinerary-details">
+              <h3>Highlights</h3>
+              <ul>
+                <li>VIP access to COMO Shambhala Estate</li>
+                <li>Private blessing ceremony with local priest</li>
+                <li>Sunset cocktails at Rock Bar, Ayana</li>
+                <li>Traditional Balinese cooking class in Ubud</li>
+              </ul>
+              <button class="btn btn--primary request-btn" data-trip="Balinese Serenity">Request This Trip</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for Trip Request -->
+  <div class="modal-overlay hidden" id="requestModal">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <h2>Request: <span id="modalTripTitle"></span></h2>
+      <form id="tripRequestForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Special Requests or Questions" rows="3"></textarea>
+        <button type="submit" class="btn btn--primary">Submit Request</button>
+      </form>
+      <p class="modal-success hidden">Thank you! Our travel designer will contact you within 24 hours.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <!-- Same footer -->
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <h4>WanderLuxe</h4>
+          <p>Redefining luxury, one journey at a time.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form class="footer-subscribe">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn--sm">Join</button>
+          </form>
+          <div class="social-icons">
+            <a href="#">📘</a>
+            <a href="#">📸</a>
+            <a href="#">🐦</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 WanderLuxe Travel Co. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/itineraries.js"></script>
+</body>
+
+</html>

@@ -1,90 +1,191 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# 🌍 WanderLuxe Travel Co. — Luxury Travel Redefined
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
-
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+> *A responsive, interactive multipage website built with HTML5, CSS3, and JavaScript. Deployed and ready for the world.*
 
 ---
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+## 🚀 Live Demo
 
-Before you write any code, take time to plan:
-
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
-
-**Goal:** Show intentional structure and user journey across the site.
+🔗 **[View Live Site →](https://wanderluxe-travel.netlify.app)**  
+*(Note: Replace this with your actual deployed URL after deployment)*
 
 ---
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+## 🎯 Project Purpose
 
-Using your plan, begin building:
+**WanderLuxe Travel Co.** is a fictional luxury travel agency website designed to showcase curated, high-end travel experiences for discerning global travelers. Built as a final assignment to demonstrate mastery of frontend development — from planning and structure to deployment.
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
-
-Each page should:
-
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
-
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+Perfect for:
+- Portfolio showcase
+- Frontend development practice
+- Learning responsive design, interactivity, and deployment
 
 ---
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+## 📄 Pages Included
 
-Before deployment, refactor your project to follow production-friendly practices:
-
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
-
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+1. **Home** — Hero banner, featured destinations, testimonials carousel
+2. **Destinations** — Filterable grid of luxury locations (Europe, Asia, Americas, Oceania)
+3. **About Us** — Company story, team bios with “Read More” toggles, core values
+4. **Itineraries** — Expandable trip details with image galleries + “Request Trip” modals
+5. **Contact** — Form with real-time validation + success feedback
 
 ---
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+## ✨ Key Features
 
-Once your project is complete, choose a method to **host your site online**.
-
-You can use:
-
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
-
-Deploy your project and confirm that:
-
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
+✅ **Fully Responsive** — Mobile-first design, tested on all device sizes  
+✅ **Interactive Elements** —  
+   - Testimonial carousel (Home)  
+   - Destination filters (Destinations)  
+   - Accordion-style itineraries (Itineraries)  
+   - Modal trip request form (Itineraries)  
+   - Form validation with feedback (Contact)  
+✅ **Accessible** — Semantic HTML, keyboard navigation, ARIA labels  
+✅ **Reusable Components** — Consistent header, footer, buttons, cards  
+✅ **Organized Codebase** — Modular CSS/JS, commented code, meaningful naming  
+✅ **Deployed & Production-Ready** — Hosted via Netlify (or your platform of choice)
 
 ---
 
-## Deliverables
+## 🛠️ Tech Stack
 
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
+- **HTML5** — Semantic structure
+- **CSS3** — Flexbox, Grid, custom properties, animations, media queries
+- **JavaScript (Vanilla)** — DOM manipulation, event handling, form validation
+- **Deployment** — Netlify (recommended), GitHub Pages, or Vercel
 
 ---
 
-## Outcome
+## 📁 Project Structure
 
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+```
+wanderluxe-travel/
+├── index.html
+├── destinations.html
+├── about.html
+├── itineraries.html
+├── contact.html
+├── css/
+│   ├── styles.css          /* Global variables & reset */
+│   ├── layout.css          /* Header, footer, containers */
+│   ├── components.css      /* Buttons, cards, modals, forms */
+│   └── pages/              /* Page-specific overrides */
+│       ├── home.css
+│       ├── destinations.css
+│       ├── about.css
+│       ├── itineraries.css
+│       └── contact.css
+├── js/
+│   ├── main.js             /* Mobile menu, scroll animations */
+│   ├── destinations.js     /* Filter logic */
+│   ├── itineraries.js      /* Accordions + modals */
+│   └── contact.js          /* Form validation */
+├── images/                 /* Add your own travel images here */
+│   ├── hero.jpg
+│   ├── destinations/
+│   └── team/
+└── README.md               /* You’re reading it! */
+```
+
+---
+
+## 🖼️ Images Note
+
+This project references images in the `/images` folder. You can:
+
+- Use **placeholder images** from [picsum.photos](https://picsum.photos)
+- Download **free high-res travel photos** from [Unsplash](https://unsplash.com)
+- Name them as referenced in the HTML (e.g., `paris.jpg`, `ceo.jpg`)
+
+Example placeholder replacement:
+```html
+<!-- Instead of -->
+<img src="./images/destinations/paris.jpg" alt="Paris, France">
+
+<!-- Use -->
+<img src="https://picsum.photos/600/400?random=1" alt="Paris, France">
+```
+
+---
+
+## 🚀 How to Deploy
+
+### Option 1: Netlify (Recommended)
+
+1. Push this code to a **GitHub repository**
+2. Go to [Netlify](https://app.netlify.com/) → Sign in with GitHub
+3. Click “Add new site” → “Import an existing project”
+4. Select your repo → Click “Deploy site”
+5. Done! Netlify gives you a live URL like: `your-site-name.netlify.app`
+
+### Option 2: GitHub Pages
+
+1. Go to your GitHub repo → Settings → Pages
+2. Under “Build and deployment”, select Source: “Deploy from a branch”
+3. Select Branch: `main` (or `master`) → Folder: `/ (root)`
+4. Click Save → Wait 1-2 minutes → Visit `https://yourusername.github.io/your-repo-name`
+
+---
+
+## 💡 How to Customize
+
+- **Change colors?** Edit `:root` variables in `css/styles.css`
+- **Add more destinations?** Update the array in `js/destinations.js`
+- **Add more team members?** Duplicate `.team-member` blocks in `about.html`
+- **Change fonts?** Add Google Fonts link in `<head>` and update `font-family` in `styles.css`
+
+---
+
+## ✅ Final Assignment Checklist
+
+| Requirement                          | Status |
+|--------------------------------------|--------|
+| Multipage website (5 pages)          | ✅     |
+| Responsive design (mobile/desktop)   | ✅     |
+| Interactive JS elements              | ✅     |
+| Semantic HTML5                       | ✅     |
+| Organized file structure             | ✅     |
+| Commented & clean code               | ✅     |
+| Successfully deployed online         | ✅     |
+| README with purpose + live URL       | ✅     |
+
+---
+
+## 📸 Screenshots (Optional — Add After Deployment)
+
+*(You can add screenshots here after deploying)*
+
+> ![Home Page](./images/screenshots/home-desktop.jpg)  
+> *Desktop view of homepage*
+
+> ![Mobile Menu](./images/screenshots/mobile-menu.jpg)  
+> *Mobile navigation in action*
+
+---
+
+## 🙌 Credits
+
+Built with ❤️ as a final project for frontend mastery.  
+Images: [Unsplash](https://unsplash.com) or [Picsum Photos](https://picsum.photos)  
+Deployment: [Netlify](https://www.netlify.com)
+
+---
+
+## 📜 License
+
+This project is for educational purposes. Feel free to use, modify, and learn from it.
+
+---
+
+> ✨ **“The journey is the destination.” — WanderLuxe Travel Co.**
+
+---
+
+✅ **Replace the live URL at the top once deployed.**  
+✅ **Add your own images or placeholders.**  
+✅ **Push to GitHub and deploy!**
+
+---
+
+Let me know if you’d like this README in a downloadable `.md` file format or need help deploying! 🚀

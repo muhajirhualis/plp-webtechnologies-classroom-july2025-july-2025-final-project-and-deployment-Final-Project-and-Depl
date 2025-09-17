@@ -1,0 +1,141 @@
+/* Header */
+.header {
+    background: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav__list a {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.nav__list a:hover {
+    color: var(--secondary);
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary);
+}
+
+/* Footer */
+.footer {
+    background: var(--dark);
+    color: var(--light);
+    padding: 3rem 0 1rem;
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer__col h4 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.footer__col ul {
+    list-style: none;
+}
+
+.footer__col ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer__col a {
+    color: var(--light);
+}
+
+.footer__col a:hover {
+    color: var(--accent);
+}
+
+.footer-subscribe {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.footer-subscribe input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer__bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        box-shadow: var(--shadow);
+        transform: translateY(-150%);
+        transition: var(--transition);
+        z-index: 99;
+    }
+
+    .nav.active {
+        transform: translateY(0);
+    }
+
+    .nav__list {
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 0;
+    }
+
+    .nav__list li {
+        padding: 0.8rem 2rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
