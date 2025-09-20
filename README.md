@@ -1,13 +1,13 @@
 # 🌍 WanderLuxe Travel Co. — Luxury Travel Redefined
 
-> *A responsive, interactive multipage website built with HTML5, CSS3, and JavaScript. Deployed and ready for the world.*
+> _A responsive, interactive multipage website built with HTML5, CSS3, and JavaScript. Deployed and ready for the world._
 
 ---
 
 ## 🚀 Live Demo
 
 🔗 **[View Live Site →](https://wanderluxe-travel.netlify.app)**  
-*(Note: Replace this with your actual deployed URL after deployment)*
+_(Note: Replace this with your actual deployed URL after deployment)_
 
 ---
 
@@ -16,6 +16,7 @@
 **WanderLuxe Travel Co.** is a fictional luxury travel agency website designed to showcase curated, high-end travel experiences for discerning global travelers. Built as a final assignment to demonstrate mastery of frontend development — from planning and structure to deployment.
 
 Perfect for:
+
 - Portfolio showcase
 - Frontend development practice
 - Learning responsive design, interactivity, and deployment
@@ -35,16 +36,17 @@ Perfect for:
 ## ✨ Key Features
 
 ✅ **Fully Responsive** — Mobile-first design, tested on all device sizes  
-✅ **Interactive Elements** —  
-   - Testimonial carousel (Home)  
-   - Destination filters (Destinations)  
-   - Accordion-style itineraries (Itineraries)  
-   - Modal trip request form (Itineraries)  
-   - Form validation with feedback (Contact)  
-✅ **Accessible** — Semantic HTML, keyboard navigation, ARIA labels  
-✅ **Reusable Components** — Consistent header, footer, buttons, cards  
-✅ **Organized Codebase** — Modular CSS/JS, commented code, meaningful naming  
-✅ **Deployed & Production-Ready** — Hosted via Netlify (or your platform of choice)
+✅ **Interactive Elements** —
+
+- Testimonial carousel (Home)
+- Destination filters (Destinations)
+- Accordion-style itineraries (Itineraries)
+- Modal trip request form (Itineraries)
+- Form validation with feedback (Contact)  
+  ✅ **Accessible** — Semantic HTML, keyboard navigation, ARIA labels  
+  ✅ **Reusable Components** — Consistent header, footer, buttons, cards  
+  ✅ **Organized Codebase** — Modular CSS/JS, commented code, meaningful naming  
+  ✅ **Deployed & Production-Ready** — Hosted via Netlify (or your platform of choice)
 
 ---
 
@@ -89,7 +91,6 @@ wanderluxe-travel/
 ```
 
 ---
-
 
 ## 🙌 Credits
 
